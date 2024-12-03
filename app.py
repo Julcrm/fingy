@@ -32,7 +32,6 @@ authentication_status = auth.login()
 if st.session_state["authentication_status"]:
     with st.sidebar:
         auth.logout("Déconnexion")
-        st.write(f"Bienvenue {auth.username}")
         selection = option_menu(
             menu_title=None,
             options=["👋 Accueil", "👉 Photos"]
